@@ -11,37 +11,46 @@ assignment operators assign value on left by value on right  =
   The conditional operator is the only JavaScript operator that takes three
 operands. 
 
+assignments have a return value
+  That means that (x = y) returns y, (x += y) returns the resulting sum x + y,
+(x **= y) returns the resulting power x ** y
+  In the case of logical assignments, (x &&= y), (x ||= y), and (x ??= y), the 
+return value is that of the logical operation without the assignment, so 
+x && y, x || y, and x ?? y, respectively.
 
-A function definition (also called a function declaration, or function statement) 
-consists of the function keyword, followed by:
-The name of the function.
-A list of parameters to the function, enclosed in parentheses and separated by commas.
-
-The JavaScript statements that define the function, enclosed in curly brackets, {...}.
-A function can refer to and call itself. There are three ways for a function to 
-refer to itself:
-The function's name
-arguments.callee
-An in-scope variable that refers to the function
-
-
-Control Flow
-control flow is order in which computer executes statements in a script
-  A typical script in JavaScript or PHP (and the like) includes many control structures, 
-including conditionals, loops and functions.
-  Control flow means that when you read a script, you must not only read from
-start to finish but also look at program structure and how it affects order 
-of execution.
-
-
-The () Operator Invokes the Function
-  Using the example above, toCelsius refers to the function object, and 
-toCelsius() refers to the function result.
-
-Local Variables
-Variables declared within a JavaScript function, become LOCAL to the function.
-Variables with same name can be used in different functions
-They're created when function starts and deleted once func has completed
+ the destructuring assignment syntax is a JavaScript expression that makes it
+possible to extract data from arrays or objects using a syntax that mirrors the 
+construction of array and object literals.
+  A comparison operator compares its operands and returns a logical value based on 
+whether the comparison is true.
+  An arithmetic operator takes numerical values (either literals or variables) as 
+their operands and returns a single numerical value.
+  A bitwise operator treats their operands as a set of 32 bits (zeros and ones), 
+rather than as decimal, hexadecimal, or octal numbers.
+  The bitwise shift operators take two operands: the first is a quantity to be 
+shifted, and the second specifies the number of bit positions by which the first
+operand is to be shifted.
+  in modern code you can use the new Nullish coalescing operator (??) that works like ||, 
+but it only returns the second expression, when the first one is "nullish", i.e. null 
+or undefined
+  The conditional operator is the only JavaScript operator that takes three operands. 
+The operator can have one of two values based on a condition.
+  The comma operator (,) evaluates both of its operands and returns the value of the last 
+operand.
+  When you delete an array property, the array length is not affected and other elements 
+are not re-indexed.
+  The typeof operator returns a string indicating the type of the unevaluated operand.
+  The void operator specifies an expression to be evaluated without returning a value.
+  Use instanceof when you need to confirm the type of an object at runtime. 
+ 
+ 
+Expressions
+An expression is any valid unit of code that resolves to a value.
+  there are two types of expressions: with side effects (for example: those that assign 
+value to a variable) and those that in some sense evaluate and therefore resolve to a value.
+  The grouping operator ( ) controls the precedence of evaluation in expressions.
+  Left values are the destination of an assignment.
+  The super keyword is used to call functions on an object's parent
 
 
 Loops
