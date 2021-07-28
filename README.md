@@ -76,3 +76,5 @@ the Array object
 arguments object and so on), invoking a custom iteration hook with statements to be executed for the 
 value of each distinct property
   
+
+  [Go to TOC](https://catdude2000.github.io/reading-notes/)
